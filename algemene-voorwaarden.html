@@ -258,7 +258,6 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
 .legal{margin-top:34px;font-size:13.5px;color:var(--muted)}
 
 /* mobile bar */
-.mbar{display:none}
 
 /* reveal */
 .js [data-r]{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -288,7 +287,6 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
 @media(max-width:960px){.work.three{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:900px){.about .grid{grid-template-columns:minmax(0,1fr)}.about .profile{order:2}.vals{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:700px){
-  body{padding-bottom:78px}
   .filters .fc{width:100%;margin-left:0}
   .work{grid-template-columns:minmax(0,1fr)}
   .svc{grid-template-columns:minmax(0,1fr)}
@@ -299,9 +297,6 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
   .faq details p{padding-right:0}
   .dlg{padding:14px}
   .dlg .browser .scr{height:70vh}
-  .mbar{display:flex;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;padding:8px;border-radius:999px;background:rgba(17,20,24,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 0 0 1px var(--line-2)}
-  .mbar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:46px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px}
-  .mbar a.p{background:var(--lime);color:var(--lime-ink)}
 }
 @media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}.js [data-r]{opacity:1;transform:none}.hero .screen:hover img{transform:none}}
 </style>
@@ -362,11 +357,6 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
     <p class="legal">© <span id="yr">2026</span> Dreambuilderwebdesign is een handelsnaam van TMB business &amp; service · KvK 94329567 · btw NL005055906B07 · <a href="mailto:dreambuilderwebdesign@outlook.com">dreambuilderwebdesign@outlook.com</a> · <a href="algemene-voorwaarden.html">Algemene voorwaarden</a> · <a href="privacyverklaring.html">Privacyverklaring</a></p>
   </div>
 </footer>
-
-<nav class="mbar" aria-label="Snel contact">
-  <a href="portfolio.html">Bekijk werk</a>
-  <a class="p" href="index.html#contact">Kennismaken</a>
-</nav>
 
 <script>
 (() => {
