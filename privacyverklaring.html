@@ -119,6 +119,7 @@ header.solid{background:rgba(7,8,10,.78);backdrop-filter:blur(14px);-webkit-back
 .feats li{font-size:13.5px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.05);color:#d8ddd8}
 .case .btn{margin-top:auto;align-self:flex-start;min-height:46px;font-size:15px}
 .case .acts{margin-top:auto;padding-top:24px}
+.bfbar{background:var(--lime);color:#07080a;text-align:center;font-size:14px;font-weight:500;padding:9px 16px;line-height:1.4}.bfbar a{color:#07080a;font-weight:700}.bfs{display:none}@media(max-width:640px){.bfl{display:none}.bfs{display:inline}.bfbar{font-size:13px;padding:8px 10px}}body:has(.bfbar) .hero{padding-top:190px}html:has(.bfbar){scroll-padding-top:130px}
 .next{margin-top:clamp(44px,5vw,64px);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:28px 30px;border-radius:22px;box-shadow:inset 0 0 0 1px rgba(200,255,46,.35);background:rgba(200,255,46,.05)}
 .next p{color:var(--muted);margin-top:4px}
 .note{margin-top:18px;font-size:14px;color:var(--muted)}
@@ -175,6 +176,7 @@ dialog::backdrop{background:rgba(0,0,0,.78);backdrop-filter:blur(4px)}
 .plan .rtag{position:absolute;top:0;left:50%;transform:translate(-50%,-50%);white-space:nowrap;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--lime);color:var(--lime-ink);padding:6px 14px;border-radius:999px}
 .plan .for{color:var(--muted);font-size:15px;margin-top:6px}
 .price{display:flex;align-items:baseline;gap:8px;margin:22px 0 6px;font-family:Unbounded,sans-serif;font-weight:600;font-size:38px;letter-spacing:-0.03em}
+.price s{font-size:20px;color:var(--muted);text-decoration-thickness:2px;font-weight:500}.bftag{display:inline-block;align-self:flex-start;width:fit-content;margin-top:16px;background:var(--lime);color:#07080a;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:99px}.bftag+.price{margin-top:10px}
 .price small{font:500 14px Inter,sans-serif;color:var(--muted);letter-spacing:0}
 .plan ul{list-style:none;padding:0;margin:18px 0 26px;display:grid;gap:10px;font-size:15.5px}
 .plan li{display:flex;gap:10px;align-items:flex-start}
@@ -301,19 +303,21 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
 }
 @media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}.js [data-r]{opacity:1;transform:none}.hero .screen:hover img{transform:none}}
 </style>
+<script>document.addEventListener("DOMContentLoaded",function(){if(Date.now()>new Date("2026-12-01T00:00:00+01:00").getTime()){document.querySelectorAll("[data-bf]").forEach(e=>e.remove());document.querySelectorAll("[data-bf-na]").forEach(e=>e.hidden=false)}})</script>
 </head>
 <body data-page="privacy">
 <script>document.documentElement.classList.add('js')</script>
 <a class="skip" href="#main">Naar de inhoud</a>
 
 <header id="top">
+<div class="bfbar" data-bf><b>Black Friday</b><span class="bfl"> · 25% korting op elk pakket bij een aanvraag t/m maandag 30 november · </span><span class="bfs"> · 25% korting t/m 30 nov · </span><a href="index.html#contact"><span class="bfl">Bespreek jouw website</span><span class="bfs">Plan een gesprek</span></a></div>
   <div class="wrap nav">
     <a class="logo" href="index.html" aria-label="Dreambuilder, naar boven"><svg class="mark" viewBox="0 0 36 30" aria-hidden="true"><path d="M4 7H8.6A2.4 2.4 0 1 1 13.4 7H17V11.1A2.4 2.4 0 1 1 17 15.9V20H4Z" transform="translate(4 6) scale(1.05)" fill="var(--lime)"/><path d="M4 7H8.6A2.4 2.4 0 1 1 13.4 7H17V11.1A2.4 2.4 0 1 1 17 15.9V20H4Z" transform="translate(15.5 0.5) rotate(24 10.5 13.5) scale(.85)" fill="none" stroke="var(--lime)" stroke-width="2.2" stroke-linejoin="round"/></svg>dreambuilder</a>
     <nav class="menu" id="menu" aria-label="Hoofdmenu">
       <a href="portfolio.html">Portfolio</a>
       <a href="index.html#prijzen">Prijzen</a>
       <a href="index.html#werkwijze">Werkwijze</a>
-      <a href="index.html#over">Over ons</a>
+      <a href="index.html#over">Over mij</a>
       <a href="index.html#faq">FAQ</a>
       <a class="btn btn-lime" href="index.html#contact">Bespreek jouw website</a>
     </nav>
@@ -353,7 +357,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
   <div class="wrap">
     <div class="foot">
       <a class="logo" href="index.html"><svg class="mark" viewBox="0 0 36 30" aria-hidden="true"><path d="M4 7H8.6A2.4 2.4 0 1 1 13.4 7H17V11.1A2.4 2.4 0 1 1 17 15.9V20H4Z" transform="translate(4 6) scale(1.05)" fill="var(--lime)"/><path d="M4 7H8.6A2.4 2.4 0 1 1 13.4 7H17V11.1A2.4 2.4 0 1 1 17 15.9V20H4Z" transform="translate(15.5 0.5) rotate(24 10.5 13.5) scale(.85)" fill="none" stroke="var(--lime)" stroke-width="2.2" stroke-linejoin="round"/></svg>dreambuilder</a>
-      <nav aria-label="Footer"><a href="portfolio.html">Portfolio</a><a href="index.html#prijzen">Prijzen</a><a href="index.html#werkwijze">Werkwijze</a><a href="index.html#over">Over ons</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Contact</a></nav>
+      <nav aria-label="Footer"><a href="portfolio.html">Portfolio</a><a href="index.html#prijzen">Prijzen</a><a href="index.html#werkwijze">Werkwijze</a><a href="index.html#over">Over mij</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Contact</a></nav>
     </div>
     <p class="legal">© <span id="yr">2026</span> Dreambuilderwebdesign is een handelsnaam van TMB business &amp; service · KvK 94329567 · btw NL005055906B07 · <a href="mailto:dreambuilderwebdesign@outlook.com">dreambuilderwebdesign@outlook.com</a> · <a href="algemene-voorwaarden.html">Algemene voorwaarden</a> · <a href="privacyverklaring.html">Privacyverklaring</a></p>
   </div>
@@ -497,7 +501,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
       .then(r => r.json())
       .then(j => {
         if (!j.success) throw new Error(j.message || 'fout');
-        $('sentText').textContent = `Je aanvraag is binnen, ${v('naam').split(' ')[0]}. Ik neem binnen een werkdag contact met je op.`;
+        $('sentText').textContent = `Je aanvraag is binnen, ${(n => n.charAt(0).toUpperCase() + n.slice(1))(v('naam').split(/\s+/)[0])}. Ik neem binnen een werkdag contact met je op.`;
         form.style.display = 'none'; sent.classList.add('show'); sent.focus();
       })
       .catch(() => setErr('mail', 'Versturen lukte niet. Probeer het nog eens, of mail direct naar dreambuilderwebdesign@outlook.com.'))
